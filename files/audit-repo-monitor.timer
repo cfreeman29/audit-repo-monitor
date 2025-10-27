@@ -1,0 +1,10 @@
+[Unit]
+Description=Run audit repository capacity monitor every minute
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=60s
+Unit=audit-repo-monitor.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,7 @@
+# Example config (install.sh renders the real one)
+AUDIT_PATHS="/var/log/audit"
+THRESHOLD=75
+DIR_MAX_GB="/var/log/audit:8"   # comment out if /var/log/audit is its own partition
+SLACK_WEBHOOK="https://hooks.slack.com/services/??????????????"
+SLACK_CHANNEL="#security-alerts" # optional
+SYSTEM_TAG="$(hostname -f)"

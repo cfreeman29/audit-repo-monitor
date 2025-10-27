@@ -1,0 +1,8 @@
+[Unit]
+Description=Audit repository capacity monitor (Slack)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/check-audit-usage.sh
